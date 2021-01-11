@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="flex justify-center items-center h-screen w-full ">
+  <div>
+    {{#swiper-container class="flex border-solid border-4 border-blue-500 h-full w-96"
+      grabCursor=true
+      loop=true
+      loopAdditionalSlides=3
+      slidesPerView=3
+    }}
 
+      {{#swiper-slide class="flex justify-center items-center h-40 w-40"}}Slide 1{{/swiper-slide}}
+      {{#swiper-slide class="flex justify-center items-center h-40 w-40"}}Slide 2{{/swiper-slide}}
+      {{#swiper-slide class="flex justify-center items-center h-40 w-40"}}Slide 3{{/swiper-slide}}
+      {{#swiper-slide class="flex justify-center items-center h-40 w-40"}}Slide 4{{/swiper-slide}}
+      {{#swiper-slide class="flex justify-center items-center h-40 w-40"}}Slide 5{{/swiper-slide}}
+    {{/swiper-container}}
+  </div>
+</div>
 {{outlet}}
